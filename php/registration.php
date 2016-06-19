@@ -3,7 +3,7 @@ $lastName = $_POST["lastName"];
 $email = $_POST["email];
 $password = $_POST["password"];
 $phoneNumber = $_POST["phoneNumber"];
-$languages = array($_POST["speakFrench"], $_POST["speakEnglish"], $_POST["speakRussian"]);
+$languages = array($_POST["speakFrench"], $_POST["speakEnglish"]);
 $helpCategories = array($_POST["bankHelp"], $_POST["insuranceHelp"], $_POST["billsHelp"],
 					    $_POST["cellHelp"], $_POST["hapanimHelp"]);
 $daysAvailable = array($_POST["sunday"], $_POST["monday"], $_POST["tuesday"],
