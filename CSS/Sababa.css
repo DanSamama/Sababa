@@ -61,8 +61,8 @@ div.homeMessage{
 .video-content .title{
     color: white;
     background-color: rgba(0,0,0,0.7);
-    transform: translateX(-50%) translateY(-50%);
-    padding: 80px 100px;
+    transform: translateX(-50%) translateY(-80%);
+    padding: 60px 40px;
     border-radius: 25px;
     font-family: 'Coiny', cursive;
     font-family: 'Bungee Shade', cursive;
@@ -84,14 +84,16 @@ div.homeMessage{
     font-family: 'Kavoon', cursive;
     font-size: 40px;
 }
-.video-content.languages.french{
-
+.languages.french{
+    margin-right: 10%;
 }
-.video-content.languages.english{
-
+.languages.english{
+    margin-right: 10%;
 }
-.video-content.languages.russian{
 
+.typeLanguage {
+    margin-left: -74%;
+    margin-top: -12%;
 }
 
 
