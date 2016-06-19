@@ -77,6 +77,6 @@ FROM sababa_tbl
 /* update values in the database : change the languages for an user */
 UPDATE sababa_tbl
 SET french = 0, english = 1
-WHERE email = 'test@gmail.com';
+WHERE email = 'test0@gmail.com';
 
 /* if you need more details : http://www.newthinktank.com/2014/08/mysql-video-tutorial/ */
