@@ -1,55 +1,65 @@
 /*Promotion Stripe*/
 
-/*.homepage-hero-module {*/
-    /*border-right: none;*/
-    /*border-left: none;*/
-    /*position: relative;*/
-/*}*/
-/*.no-video .video-container video,*/
-/*.touch .video-container video {*/
-    /*display: none;*/
-/*}*/
-/*.no-video .video-container .poster,*/
-/*.touch .video-container .poster {*/
-    /*display: block !important;*/
-/*}*/
-/*.video-container {*/
-    /*!*position: relative;*!*/
-    /*bottom: 0%;*/
-    /*left: 0%;*/
-    /*height: 100%;*/
-    /*width: 100%;*/
-    /*overflow: hidden;*/
-    /*background: #000;*/
-/*}*/
-/*.video-container .poster img {*/
-    /*width: 100%;*/
-    /*bottom: 0;*/
-    /*position: absolute;*/
-/*}*/
-/*.video-container .filter {*/
-    /*z-index: 100;*/
-    /*position: absolute;*/
-    /*background: rgba(0, 0, 0, 0.4);*/
-    /*width: 100%;*/
-/*}*/
-/*.video-container video {*/
-    /*position: absolute;*/
-    /*z-index: 0;*/
-    /*bottom: 0;*/
-/*}*/
-/*.video-container video.fillWidth {*/
-    /*width: 100%;*/
-/*}*/
-/*.container.main.landscape{*/
-    /*margin: 0px;*/
-    /*position: absolute;*/
-    /*z-index: 1;*/
-/*}*/
-/*div.homeMessage{*/
-    /*z-index: 3;*/
-    /*position: fixed;*/
-/*}*/
+.homepage-hero-module {
+    border-right: none;
+    border-left: none;
+    position: relative;
+}
+.no-video .video-container video,
+.touch .video-container video {
+    display: none;
+}
+.no-video .video-container .poster,
+.touch .video-container .poster {
+    display: block !important;
+}
+.video-container {
+    bottom: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+    z-index:1;
+}
+.video-container .poster img {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+.video-container .filter {
+    z-index: 100;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+}
+.video-container video {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+}
+.video-container video.fillWidth {
+    width: 100%;
+}
+.container.main.landscape{
+    margin: 0px;
+    position: absolute;
+    z-index: 1;
+}
+div.homeMessage{
+    z-index: 3;
+    position: fixed;
+}
+.video-content{
+    z-index: 21;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    background-color: black;
+    transform: translateX(-50%) translateY(-50%);
+    padding: 40px 60px;
+}
 /*End of promotion stripe*/
 /*New promotion stripe:*/
 
@@ -72,7 +82,7 @@ body.allBody{
 
 }
 
-div.navbar{
+.navbar{
     position: fixed;
     z-index: 4;
     background-color: black;
@@ -92,7 +102,10 @@ div.navbar{
     margin-top: 83%;
     margin-left: 15%;
 }
-
+.navbar-brand.Sababa{
+    font-family: 'Coiny', cursive;
+    font-size: 33px;
+}
 
 
 /*Second Row*/
@@ -117,11 +130,11 @@ div.hover {
     overflow: hidden;
 }
 
-/*.row {*/
-/*margin-bottom: 4%;*/
-/*padding: 2%;*/
+.row {
+margin-bottom: 4%;
+padding: 2%;
 
-/*}*/
+}
 div.icon {
     border-color: #00AEEF;
 }
