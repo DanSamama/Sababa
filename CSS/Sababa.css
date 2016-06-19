@@ -53,6 +53,10 @@
 /*End of promotion stripe*/
 /*New promotion stripe:*/
 
+body.allBody{
+    padding:0;
+    margin: 0;
+}
 .promotion{
     background-image:url('../Images/Helping.jpg');
     height:845px;
@@ -73,6 +77,23 @@ div.navbar{
     z-index: 4;
     background-color: black;
 }
+.logoFlag{
+    height: 100px;
+    width: auto;
+}
+.logoFlag.usa {
+    margin-top: 85%;
+    margin-left: 68%;
+}
+.logoFlag.fr {
+    margin-right: 8%;
+}
+.logoFlag.ru {
+    margin-top: 83%;
+    margin-left: 15%;
+}
+
+
 
 /*Second Row*/
 
