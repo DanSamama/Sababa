@@ -62,9 +62,11 @@
     font-size: 60px;
     color: white;
     margin-top: 22%;
+    font-family: Circular;
+    text-align: center;
+    text-shadow: 2px 2px black;
+
 }
-
-
 
 div.navbar{
     position: fixed;
