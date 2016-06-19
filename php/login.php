@@ -1,4 +1,5 @@
 <?php
+
 	session_start();
 
 	if (isset($_POST['login']) && $_POST['login'] != '') {
@@ -15,14 +16,43 @@
 			$_SESSION['helper'] = $row['helper'];
 			$_SESSION['english'] = $row['english'];
 			$_SESSION['french'] = $row['french'];
+			$lang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
 
 			if ($_SESSION['helper'] == 0) {
-				//redirect to helpee page
-				//header(Location: page.html)
+				if ($lang == "en" && $_SESSION['english'] == 1) {
+					//redirect to english helpee page
+					//header(Location: page.html)
+				}
+				else if ($lang == "fr" && $_SESSION['french'] == 1) {
+					//redirect to french helpee page
+					//header(Location: page.html)
+				}
+				else if ($lang == "fr") {
+					//redirect to english helpee page
+					//header(Location: page.html)
+				}
+				else {
+					//redirect to french helpee page
+					//header(Location: page.html)
+				}	
 			}
 			else {
-				//redirect to helper page
-				//header(Location: page.html)
+				if ($lang == "en" && $_SESSION['english'] == 1) {
+					//redirect to english helper page
+					//header(Location: page.html)
+				}
+				else if ($lang == "fr" && $_SESSION['french'] == 1) {
+					//redirect to french helper page
+					//header(Location: page.html)
+				}
+				else if ($lang == "fr") {
+					//redirect to english helper page
+					//header(Location: page.html)
+				}
+				else {
+					//redirect to french helper page
+					//header(Location: page.html)
+				}	
 			}
 		}
 		else {
