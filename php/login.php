@@ -12,8 +12,18 @@
 		if ($password == $dbpass) {
 			$_SESSION['email'] = $email;
 			$_SESSION['id'] = $id;
-			//redirect to next page
-			//header(Location: page.html)
+			$_SESSION['helper'] = $row['helper'];
+			$_SESSION['english'] = $row['english'];
+			$_SESSION['french'] = $row['french'];
+
+			if ($_SESSION['helper'] == 0) {
+				//redirect to helpee page
+				//header(Location: page.html)
+			}
+			else {
+				//redirect to helper page
+				//header(Location: page.html)
+			}
 		}
 		else {
 			//redirect to next page
