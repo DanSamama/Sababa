@@ -2,6 +2,7 @@
     width: 100%;
     padding: 8px 0;
     border-right: 1px solid #ddd;
+    background-color:#101010;
 }
 .nav-sidebar button {
     color: #333;
@@ -39,4 +40,19 @@ div.helpee{
 }
 div.filters{
     height:300px;
+}
+
+select.dropdown{
+    margin:2%;
+    padding:2%;
+background-color:#101010;
+    color:white;
+    border-color: white;
+}
+h1.filter{
+    color:white;
+}
+
+a.sign_in{
+    color:white;
 }
