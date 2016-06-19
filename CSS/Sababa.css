@@ -58,7 +58,8 @@ div.homeMessage{
     color: white;
     background-color: black;
     transform: translateX(-50%) translateY(-50%);
-    padding: 40px 60px;
+    padding: 80px 100px;
+    border-radius: 25px;
 }
 /*End of promotion stripe*/
 /*New promotion stripe:*/
