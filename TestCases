@@ -1,0 +1,28 @@
+function member(id, helper, email, password, first, last, phone, city, languages, skills, days, rating){
+    this.id = id;
+    this.helper = helper;
+    this.location = city;
+    this.email = email;
+    this.password = password;
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.phoneNumber = phone;
+    this.languages = languages;
+    this.skills = skills;
+    this.days = days;
+    this.rating = rating;
+}
+var listOfMemebers = [new member(0, 1, 'test0@gmail.com', 'pwd1', 'Jeremy', 'Atia', '54239891', 'Tel Aviv', [1, 1], [1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1], 5 ),
+                      new member(1, 1, 'test1@gmail.com', 'pwd2', 'Ely', 'Eastman', '587831032', 'The Negev', [0, 1], [1, 0, 1, 0, 1], [0, 0, 0, 1, 1, 1, 1], 3),
+                      new member(2, 1, 'test2@gmail.com', 'pwd3', 'Jeremy', 'Atia', '986149861', 'Bat Yam', [1, 1], [1, 1, 1, 1, 1], [1, 1, 1, 1, 0, 1, 1], 1 ),
+                      new member(3, 1, 'test3@gmail.com', 'pwd4', 'John', 'Smith', '54239891', 'Haifa', [1, 1], [1, 1, 1, 1, 1], [1, 1, 1, 1, 0, 1, 1], 4 ),
+                      new member(4, 1, 'test4@gmail.com', 'pwd5', 'Mike', 'Jones', '141520192', 'Bat Shean', [1, 1], [1, 1, 1, 1, 1], [0, 1, 1, 1, 1, 1, 1], 3 ),
+                      new member(5, 1, 'test5@gmail.com', 'pwd6', 'Lenny', 'Jamison', '54239891', 'Ramat Gan', [1, 1], [1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1], 5 ),
+                      new member(6, 1, 'test6@gmail.com', 'pwd7', 'Bob', 'Johnson', '08939023', 'Jerusalem', [0, 1], [1, 0, 0, 0, 0], [0, 0, 0, 1, 0, 0, 0], 2 ),
+                      new member(7, 1, 'test0@gmail.com', 'pwd8', 'Karl', 'Anthony', '2344234', 'Dead Sea', [1, 1], [1, 1, 0, 1, 0], [1, 1, 1, 1, 1, 1, 1], 5 ),
+                      new member(8, 1, 'test1@gmail.com', 'pwd9', 'Towns', 'Kevin', '3242342', 'Jordan River', [0, 1], [1, 0, 1, 0, 1], [0, 0, 0, 1, 1, 1, 1], 3),
+                      new member(9, 1, 'test2@gmail.com', 'pwd10', 'Ricky', 'Thomas', '2342342', 'Bat Yam', [1, 0], [1, 1, 1, 1, 1], [1, 1, 0, 1, 1, 1, 1], 1 ),
+                      new member(10, 0, 'test3@gmail.com', 'pwd11', 'Avery', 'Smart', '3669064590', 'Haifa', [1, 0], [1, 0, 1, 1, 1], [1, 0, 1, 1, 1, 1, 1], 4 ),
+                      new member(11, 1, 'test4@gmail.com', 'pwd12', 'Kelly', 'Jon', '235235', 'Bat Shean', [0, 1], [0, 1, 1, 0, 1], [1, 1, 1, 1, 0, 1, 1], 3 ),
+                      new member(12, 1, 'test5@gmail.com', 'pwd13', 'Mary', 'West', '1235235', 'Ramat Gan', [1, 1], [1, 1, 1, 1, 0], [1, 1, 0, 1, 1, 1, 1], 5 ),
+                      new member(13, 1, 'test6@gmail.com', 'pwd14', 'Sue', 'Levine', '857687645', 'Jerusalem', [0, 1], [1, 0, 0, 0, 0], [0, 0, 0, 1, 0, 0, 0], 2 )]
