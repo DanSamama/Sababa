@@ -16,51 +16,81 @@ function member(id, helper, email, password, first, last, phone, city, languages
     this.rating = rating;
 }
 $('.dropdown-toggle').dropdown();
-var members=[
-    {statut:'helper', name:'samuel', familyname:'attia', email:'test0@gmail.com',langage:'french',skills:'bank'},
-    {statut:'helper', name:'orel', familyname:'attia', email:'test0@gmail.com',langage:'english',skills:'bank'},
-    {statut:'helper', name:'sarah', familyname:'attia', email:'test0@gmail.com',langage:'russian',skills:'insurance'},
-    {statut:'helper', name:'samuel', familyname:'attia', email:'test0@gmail.com',langage:'french',skills:'bills'},
-    {statut:'helper', name:'lydia', familyname:'attia', email:'test0@gmail.com',langage:'english',skills:'bank'},
-    {statut:'helper', name:'nathalie', familyname:'attia', email:'test0@gmail.com',langage:'russian',skills:'bills'},
-    {statut:'helper', name:'dan', familyname:'attia', email:'test0@gmail.com',langage:'french',skills:'admin'},
-    {statut:'helper', name:'jordan', familyname:'attia', email:'test0@gmail.com',langage:'english',skills:'bills'},
-    {statut:'helper', name:'samuel', familyname:'attia', email:'test0@gmail.com',langage:'french',skills:'admin'},
-    {statut:'helper', name:'ben', familyname:'attia', email:'test0@gmail.com',langage:'english',skills:'admin'},
-    {statut:'helper', name:'samuel', familyname:'attia', email:'test0@gmail.com',langage:'russian',skills:'insurance'},
-    {statut:'helpee', name:'hilly', familyname:'attia', email:'test0@gmail.com'},
-    {statut:'helpee', name:'jeremy', familyname:'attia', email:'test0@gmail.com'},
-    {statut:'helpee', name:'samuel', familyname:'attia', email:'test0@gmail.com'},
-    {statut:'helpee', name:'samuel', familyname:'attia', email:'test0@gmail.com'},
-    {statut:'helpee', name:'samuel', familyname:'attia', email:'test0@gmail.com'},
+var members =[
+    {status:"helper", name:"samuel", familyname:"attia", mail:"test0@gmail.com",langage:"french",skills:"bank"},
+    {status:"helper", name:"orel", familyname:"attia", mail:"test0@gmail.com",langage:"english",skills:"bank"},
+    {status:"helper", name:"sarah", familyname:"attia", mail:"test0@gmail.com",langage:"russian",skills:"insurance"},
+    {status:"helper", name:"samuel", familyname:"attia", mail:"test0@gmail.com",langage:"french",skills:"bills"},
+    {status:"helper", name:"lydia", familyname:"attia", mail:"test0@gmail.com",langage:"english",skills:"bank"},
+    {status:"helper", name:"nathalie", familyname:"attia", mail:"test0@gmail.com",langage:"russian",skills:"bills"},
+    {status:"helper", name:"dan", familyname:"attia",mail:"test0@gmail.com",langage:"french",skills:"admin"},
+    {status:"helper", name:"jordan", familyname:"attia", mail:"test0@gmail.com",langage:"english",skills:"bills"},
+    {status:"helper", name:"samuel", familyname:"attia",mail:"test0@gmail.com",langage:"french",skills:"admin"},
+    {status:"helper", name:"ben", familyname:"attia", mail:"test0@gmail.com",langage:"english",skills:"admin"},
+    {status:"helper", name:"samuel", familyname:"attia", mail:"test0@gmail.com",langage:"russian",skills:"insurance"},
+    {status:"helpee", name:"hilly", familyname:"attia", mail:"test0@gmail.com",langage:"french",skills:"admin"},
+    {status:"helpee", name:"jeremy", familyname:"attia", mail:"test0@gmail.com",langage:"french",skills:"admin"},
+    {status:"helpee", name:"samuel", familyname:"attia", mail:"test0@gmail.com",langage:"french",skills:"admin"},
+    {status:"helpee", name:"samuel", familyname:"attia", mail:"test0@gmail.com",langage:"french",skills:"admin"},
+    {status:"helpee", name:"samuel", familyname:"attia", mail:"test0@gmail.com",langage:"french",skills:"admin"}
 ]
 function frenchUsers(){
-    for (var i=0;i<members.length;i++){
-        if (members[i].statut.toUpperCase ==="HELPER" && members[i].langage.toUpperCase ==="FRENCH"){
-            document.querySelector("div.helpers").innerHTML = members[i].name+members[i].email;
+    var txt="";
+    for (var i in members){
+        console.log(members.length);
+        console.log(members[i].status.toUpperCase());
+        console.log(members[i].langage.toUpperCase());
+        if (members[i].status.toUpperCase() ==="HELPER" && members[i].langage.toUpperCase() ==="FRENCH"){
+             txt="\n"+txt+"\n"+members[i].name+" "+members[i].mail;
+
         }
     }
+    document.querySelector("div.helpers").innerHTML = txt;
 }
 
-function skills (helperSkill){
-    for (var i=0;i<arr.length;i++){
-        if (members[i].skill.toUpperCase === helperSkill){
-            document.querySelector("div.helpers").innerHTML = members[i].name+members[i].email;
+function englishUsers(){
+    var txt="";
+    for (var i in members){
+        console.log(members.length);
+        console.log(members[i].status.toUpperCase());
+        console.log(members[i].langage.toUpperCase());
+        if (members[i].status.toUpperCase() ==="HELPER" && members[i].langage.toUpperCase() ==="ENGLISH"){
+            txt="\n"+txt+"\n"+members[i].name+" "+members[i].mail;
+
         }
     }
+    document.querySelector("div.helpers").innerHTML = txt;
+}
+
+function russianUsers(){
+    var txt="";
+    for (var i in members){
+        console.log(members.length);
+        console.log(members[i].status.toUpperCase());
+        console.log(members[i].langage.toUpperCase());
+        if (members[i].status.toUpperCase() ==="HELPER" && members[i].langage.toUpperCase() ==="RUSSIAN"){
+            txt="\n"+txt+"\n"+members[i].name+" "+members[i].mail;
+
+        }
+    }
+    document.querySelector("div.helpers").innerHTML = txt;
+}
+function skills (helperSkill){
+    for (var i in members){
+        if (members[i].skills.toUpperCase === helperSkill){
+            txt="\n"+txt+"\n"+members[i].name+" "+members[i].mail;
+        }
+    }
+    document.querySelector("div.helpers").innerHTML = txt;
 }
 
 function skillsChecked(){
-    var answerValues = {"BANK": 1, "ADMIN": 2, "INSURANCE":3, "BILLS":4};
     var fskills=document.getElementsByClassName("skills");
-    for (var i=0; i < fskills.length; i++) {
-        var btn = fskills[i];
-        if (btn.checked) {
+    var btn = fskills[i];
+        if (option.selected) {
             console.log("works");
             skills(btn)
         }
-    }
-
 }
 
 function localisation(){

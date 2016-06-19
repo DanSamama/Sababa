@@ -12,7 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    
+
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
     <link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">
@@ -32,6 +32,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
 <body>
 <!--<div class="container helpee ">-->
@@ -45,21 +49,30 @@
             <nav class="nav-sidebar">
                 <h1>Filter by</h1>
                 <ul class="nav">
-                    <li ><button onclick="javascript:;">Availability</button></li>
+                    <li ><button onclick="frenchUsers();">Availability</button></li>
                     <!--<li><button onclick="javascript:;">Skills</button></li>-->
-                    <div class="dropdown">
-                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                            Skills
-                            <span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                            <li><a href="#">Bank</a></li>
-                            <li><a href="#">Insurance</a></li>
-                            <li><a href="#">Admin</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">Separated link</a></li>
-                        </ul>
-                    </div>
+                    <select name="skills" multiple="" class=" skills ui fluid selection dropdown">
+                        <!--<input type="hidden" name="skills">-->
+                        <!--<i class="dropdown icon"></i>-->
+                         <option class="evil" onclick="skillsChecked();" id="bank" value="banks">banks</option>
+                        <option class="evil" onclick="skillsChecked();"id="insurance" value="insurance">insurance</option>
+                        <option class="evil" onclick="skillsChecked();"id="admin" value="admin">admin</option>
+                        <option class="evil" onclick="skillsChecked();"id="bills" value="bills">bills</option>
+                    </select>
+
+                    <!--<div class="dropdown">-->
+                        <!--<select class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">-->
+                            <!--Skills-->
+                            <!--<span class="caret"></span>-->
+                        <!--</select>-->
+                        <!--<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">-->
+                            <!--<li><option href="#">Bank</option></li>-->
+                            <!--<li><option href="#">Insurance</option></li>-->
+                            <!--<li><option href="#">Admin</option></li>-->
+                            <!--<li><option href="#">Admin</option></li>-->
+
+                        <!--</ul>-->
+                    <!--</div>-->
                     <li><button onclick="javascript:;">Localisation</button></li>
                     <!--<li><a href="javascript:;">FAQ</a></li>-->
                     <li class="nav-divider"></li>
