@@ -15,7 +15,7 @@ function member(id, helper, email, password, first, last, phone, city, languages
     this.days = days;
     this.rating = rating;
 }
-$('.dropdown-toggle').dropdown();
+
 var members =[
     {status:"helper", name:"samuel", familyname:"attia", mail:"test0@gmail.com",langage:"french",skills:"bank"},
     {status:"helper", name:"orel", familyname:"attia", mail:"test0@gmail.com",langage:"english",skills:"bank"},
