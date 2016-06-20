@@ -2,21 +2,56 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="CSS/Sababa.css">
+
 </head>
 <body>
+<h1>Local Helper Signup Form</h1>
 
-<h1>Helper Signup Form</h1>
-<form action="file.php" method="post">
+<form>
+  <fieldset class="account-info">
+    <label>
+      Username
+      <input type="text" name="username">
+    </label>
+    <label>
+      Password
+      <input type="password" name="password">
+    </label>
+  </fieldset>
+  <fieldset class="account-action">
+    <input class="btn" type="submit" name="submit" value="Login">
+    <label>
+      <input type="checkbox" name="remember"> Stay signed in
+    </label>
+  </fieldset>
+</form>
+
+
+
+
+<!-- <form action="file.php" method="post">
+    <fieldset class="account-info"></fieldset>
+
+  <label for="username">
     First Name: <input type="text" name="firstName"><br>
     Last Name: <input type="text" name="lastName"><br>
+
     E-mail: <input type="text" name="email"><br>
     Password: <input type="password" name="password"><br>
+
+
     Phone Number: <input type="tel" name="phoneNumber"><br>
     Languages: <br>
+</label>
+
     <ul>
         <li>Français: <input type="checkbox" name="speakFrench"></li>
         <li>English: <input type="checkbox" name="speakEnglish"></li>
     </ul><br>
+
+
     Subjects: <br>
     <ul><br>
         <li>Bank Accounts: <input type="checkbox" name="bankHelp"></li>
@@ -27,7 +62,13 @@
         <!--<li>Cell Phone/Internet/TV companies: <input type="checkbox" name="cellHelp"></li>-->
         <!--<li>Misrad Hapanim: <input type="checkbox" name="hapanimHelp"></li>-->
     </ul><br>
+<<<<<<< Updated upstream
     Availability: <br>
+=======
+
+
+    Availability:: <br>
+>>>>>>> Stashed changes
     <ul>
         <li>Sunday: <input type="checkbox" name="sunday"></li>
         <li>Monday: <input type="checkbox" name="monday"></li>
@@ -38,7 +79,10 @@
         <li>Saturday: <input type="checkbox" name="saturday"></li>
     </ul>
     <input type="submit">
-</form>
+</form> -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 
 </body>
 </html>

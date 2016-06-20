@@ -1,0 +1,25 @@
+.stripe{
+  display:inline-block;
+  font-family:Circular;
+}
+
+.top{
+  text-align:left;
+}
+
+
+.frenchMan{
+  width:60%;
+  height:auto;
+  border:0px;
+  vertical-align:center;
+}
+
+.middle{
+  text-align:right;
+  display:inline-block;
+}
+
+.bottom{
+
+}
