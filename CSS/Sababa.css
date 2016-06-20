@@ -78,10 +78,11 @@ div.homeMessage{
     background-color: rgba(0,0,0,0.7);
     padding: 20px 40px;
     border-radius: 25px;
-    font-family: 'Coiny', cursive;
-    font-family: 'Bungee Shade', cursive;
-    font-family: 'Yatra One', cursive;
-    font-family: 'Kavoon', cursive;
+    /*font-family: 'Coiny', cursive;*/
+    /*font-family: 'Bungee Shade', cursive;*/
+    /*font-family: 'Yatra One', cursive;*/
+    /*font-family: 'Kavoon', cursive;*/
+    font-family: 'Calibri Light', cursive;
     font-size: 40px;
 }
 .languages.french{
@@ -92,7 +93,7 @@ div.homeMessage{
 }
 
 .typeLanguage {
-    margin-left: -74%;
+    margin-left: -66%;
     margin-top: -12%;
 }
 
@@ -170,6 +171,7 @@ div.stripe.explanation{
 
 div.row.explanation{
     height:300px;
+    background-color: #ECECEC;
 }
 
 .col-lg-2.icon {
@@ -186,7 +188,7 @@ div.hover {
 }
 
 .row {
-margin-top: 1%;
+/*margin-top: 1%;*/
 padding: 2%;
 
 }
@@ -308,13 +310,13 @@ div.row.more_ppt{
 
 img.sababa{
     vertical-align:middle;
-    margin-left:25%;
+    margin-left:30%;
 }
 
 .fa-exchange{
     position: absolute;
-    top: 113px;
-    left: -46px;
+    top: 31%;
+    left: -24%;
 
 }
 
@@ -332,8 +334,9 @@ img.sababa{
 p.sababa{
     text-align:center;
 }
-<<<<<<< Updated upstream
-=======
+.immigrant {
+    margin-left: -17%;
+}
 
 /*Start form beaty */
 
@@ -393,4 +396,4 @@ input {
   margin: 10px 0 0 20px;
 }
 
-/* end form beatification */
+
