@@ -438,3 +438,6 @@ p.footer-links {
 p.footer-company-name {
     color: white;
 }
+.footer-links {
+    border-radius: 25px;
+}
