@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="loginForm.css">
 </head>
 <body>
-
-<h1>Login</h1>
-<form action="../php/login.php" method="post">
-    Email: <input type="text" name="email">
-    Password: <input type="password" name="password">
-    <input type="submit">
+<div class="login">
+<h1 class="text">Login</h1>
+<form class=""action="../php/login.php" method="post">
+    <label class="text input">Email</label> <input  type="text" name="email">
+    <label class="text input">Password</label> <input  type="password" name="password">
+    <input class="text submit" type="submit">
 </form>
-
+</div>
 </body>
 </html>
