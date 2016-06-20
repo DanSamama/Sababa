@@ -1,0 +1,31 @@
+div.login{
+    background-color: #000;
+    margin: 0;
+    height: 200px;
+    width: 100%;
+    vertical-align: middle;
+    border-radius:25px;
+}
+
+
+
+.text{
+
+    font-family: 'Coiny', cursive;
+    font-family: 'Bungee Shade', cursive;
+    font-family: 'Yatra One', cursive;
+    font-family: 'Kavoon', cursive;
+    font-size: 40px;
+    color:white;
+    margin-left:2%;
+}
+
+label.text
+{
+    font-size:25px;
+}
+
+input.submit{
+    font-size:15px;
+    color:black;
+}
