@@ -407,5 +407,13 @@ input {
   float: left;
   margin: 10px 0 0 20px;
 }
-
+.footer-company-name{
+    display: inline-block;
+}
+span.SocialN {
+    margin-left: 76%;
+}
+img.socialNetwork.facebook, img.socialNetwork.google, img.socialNetwork.instagram {
+    padding-right: 1%;
+}
 
