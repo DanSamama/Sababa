@@ -55,4 +55,45 @@ h1.filter{
 
 a.sign_in{
     color:white;
+}  .bio{
+       display: inline-block;
+       height: 100px;
+       width: 225px;
+       text-align: center;
+       border: 2px black solid;
+       border-radius: 5px;
+   }
+
+.profileImage{
+    height: 50px;
+    width: 50px;
+    float: left;
+}
+
+.details{
+    display: inline-block;
+    height: 50%;
+    vertical-align: top;
+}
+
+.buttons{
+    height: 75%;
+    width: 50%;
+    vertical-align: middle;
+    color: white;
+    display: table-cell;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.text{
+    display: table-cell;
+    width: 50%;
+    vertical-align: middle;
+}
+.rating{
+    vertical-align: middle;
+    height: 50%;
+    width: 100%;
+    display: table;
+    text-align: center;
 }
