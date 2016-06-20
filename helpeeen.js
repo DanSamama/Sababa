@@ -1,6 +1,9 @@
 /**
  * Created by itc_user on 6/19/2016.
  */
+ var CITYG="";
+ var AVAILG="";
+ var SKILLSG="";
 function member(id, helper, email, password, first, last, phone, city, languages, skills, days, rating){
     this.id = id;
     this.helper = helper;
@@ -19,13 +22,13 @@ function member(id, helper, email, password, first, last, phone, city, languages
 var members =[
     {status:"helper", name:"samuel", familyname:"attia", mail:"test0@gmail.com",langage:"french",skills:["banks", "insurance"],city:"tel aviv",availability:["monday", "tuesday", "thursday", "friday"]},
     {status:"helper", name:"orel", familyname:"attia", mail:"test1@gmail.com",langage:"english",skills:["banks", "insurance"],city:"jerusalem",availability:["sunday", "tuesday", "wednesday", "friday"]},
-    {status:"helper", name:"sarah", familyname:"attia", mail:"test2@gmail.com",langage:"russian",skills:["banks", "insurance"],city:"haifa",availability:["sunday", "thursday", "saturday"]},
+    {status:"helper", name:"sarah", familyname:"attia", mail:"test2@gmail.com",langage:"russian",skills:["banks", "admin"],city:"haifa",availability:["sunday", "thursday", "saturday"]},
     {status:"helper", name:"samuel", familyname:"attia", mail:"test3@gmail.com",langage:"french",skills:["banks", "insurance"],city:"tel aviv",availability:["monday", "tuesday", "wednesday", "thursday", "friday"]},
     {status:"helper", name:"lydia", familyname:"attia", mail:"test4@gmail.com",langage:"english",skills:["bills", "insurance", "admin"],city:"tel aviv",availability:["monday", "tuesday", "thursday", "friday", "saturday"]},
     {status:"helper", name:"nathalie", familyname:"attia", mail:"test5@gmail.com",langage:"russian",skills:["banks", "insurance"],city:"tel aviv",availability:["sunday", "monday", "wednesday", "thursday", "friday"]},
     {status:"helper", name:"dan", familyname:"attia",mail:"test6@gmail.com",langage:"french",skills:["banks", "insurance"],city:"tel aviv",availability:["tuesday", "thursday", "friday"]},
     {status:"helper", name:"jordan", familyname:"attia", mail:"test7@gmail.com",langage:"english",skills:["banks", "insurance"],city:"tel aviv",availability:["tuesday", "wednesday", "friday"]},
-    {status:"helper", name:"samuel", familyname:"attia",mail:"test8@gmail.com",langage:"french",skills:["banks", "insurance"],city:"tel aviv",availability:["sunday", "tuesday", "thursday", "saturday"]},
+    {status:"helper", name:"samuel", familyname:"attia",mail:"test8@gmail.com",langage:"french",skills:["banks", "admin"],city:"tel aviv",availability:["sunday", "tuesday", "thursday", "saturday"]},
     {status:"helper", name:"ben", familyname:"attia", mail:"test9@gmail.com",langage:"english",skills:["bills", "insurance"],city:"tel aviv",availability:["monday", "tuesday", "thursday", "friday"]},
     {status:"helper", name:"samuel", familyname:"attia", mail:"test10@gmail.com",langage:"russian",skills:["banks", "admin", "insurance"],city:"tel aviv",availability:["monday", "tuesday", "thursday", "friday"]},
     {status:"helpee", name:"hilly", familyname:"attia", mail:"test11@gmail.com",langage:"french",skills:["banks", "bills", "admin", "insurance"],city:"tel aviv",availability:["monday", "tuesday", "thursday", "friday"]},
@@ -80,9 +83,18 @@ function skills (helperSkill){
     console.log(helperSkill);
     for (var i in members){
         for (var j in members[i].skills) {
-            if (members[i].skills[j].toUpperCase() === helperSkill.toUpperCase()){
-                console.log('works');
-                txt="\n"+txt+"\n"+members[i].name+" "+members[i].mail;
+            if (members[i].skills[j].toUpperCase() === helperSkill.toUpperCase()
+                && (CITYG == "" || CITYG == members[i].city.toUpperCase())){
+                if (AVAILG == "") {
+                    txt="\n"+txt+"\n"+members[i].name+" "+members[i].mail;
+                }
+                else {
+                    for (var k in members[i].availability) {
+                        if (AVAILG == members[i].availability[k].toUpperCase()) {
+                            txt="\n"+txt+"\n"+members[i].name+" "+members[i].mail;
+                        }
+                    }
+                }
             }
         }
     }
@@ -94,6 +106,7 @@ function skillsChecked(){
     for (var i in fskills) {
         var btn = fskills[i];
         if (btn.selected) {
+            SKILLSG = btn.value.toUpperCase();
             skills(btn.value);
         }
     }
@@ -103,10 +116,35 @@ function localisation(place){
     var txt=" ";
     console.log(place);
     for (var i in members){
-
         if (members[i].city.toUpperCase() === place.toUpperCase()){
-            console.log('works');
-            txt="\n"+txt+"\n"+members[i].name+" "+members[i].mail;
+            if (AVAILG == "") {
+                if (SKILLSG == "") {
+                    txt="\n"+txt+"\n"+members[i].name+" "+members[i].mail;
+                }
+                else {
+                    for (var k in members[i].skills) {
+                        if (SKILLSG == members[i].skills[k].toUpperCase()) {
+                            txt="\n"+txt+"\n"+members[i].name+" "+members[i].mail;
+                        }
+                    }
+                }
+            }
+            else {
+                for (var k in members[i].availability) {
+                    if (AVAILG == members[i].availability[k].toUpperCase()) {
+                        if (SKILLSG == "") {
+                            txt="\n"+txt+"\n"+members[i].name+" "+members[i].mail;
+                        }
+                        else {
+                            for (var p in members[i].skills) {
+                                if (SKILLSG == members[i].skills[p].toUpperCase()) {
+                                    txt="\n"+txt+"\n"+members[i].name+" "+members[i].mail;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
     document.querySelector("div.helpers").innerHTML = txt;
@@ -117,6 +155,7 @@ function localisationChecked(){
     for (var i in fcity) {
         var btn = fcity[i];
         if (btn.selected) {
+            CITYG = btn.value.toUpperCase();
             localisation(btn.value);
         }
     }
@@ -126,9 +165,18 @@ function availability(moment){
     console.log(moment);
     for (var i in members){
         for (var j in members[i].availability) {
-            if (members[i].availability[j].toUpperCase() === moment.toUpperCase()){
-                console.log('works');
-                txt="\n"+txt+"\n"+members[i].name+" "+members[i].mail;
+            if (members[i].availability[j].toUpperCase() === moment.toUpperCase() 
+                && (CITYG == "" || CITYG == members[i].city.toUpperCase())){
+                if (SKILLSG == "") {
+                    txt="\n"+txt+"\n"+members[i].name+" "+members[i].mail;
+                }
+                else {
+                    for (var k in members[i].skills) {
+                        if (SKILLSG == members[i].skills[k].toUpperCase()) {
+                            txt="\n"+txt+"\n"+members[i].name+" "+members[i].mail;
+                        }
+                    }
+                }
             }
         }
     }
@@ -140,6 +188,7 @@ function availabilityChecked(){
     for (var i in fday) {
         var btn = fday[i];
         if (btn.selected) {
+            AVAILG = btn.value.toUpperCase();
             availability(btn.value);
         }
     }
