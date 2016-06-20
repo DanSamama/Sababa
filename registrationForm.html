@@ -2,87 +2,118 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+
     <link rel="stylesheet" type="text/css" href="CSS/Sababa.css">
+    <link rel="stylesheet" type="text/css" href="registrationForm.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
 
 </head>
 <body>
-<h1>Local Helper Signup Form</h1>
 
-<form>
-  <fieldset class="account-info">
-    <label>
-      Username
-      <input type="text" name="username">
-    </label>
-    <label>
-      Password
-      <input type="password" name="password">
-    </label>
-  </fieldset>
-  <fieldset class="account-action">
-    <input class="btn" type="submit" name="submit" value="Login">
-    <label>
-      <input type="checkbox" name="remember"> Stay signed in
-    </label>
-  </fieldset>
-</form>
+<div class="container local sign_up">
+    <div class="row one">
+        <h1>Local Helper Signup Form</h1>
 
+    </div>
 
+    <!--<form action="file.php" method="post">-->
+    <!--<fieldset class="account-info"></fieldset>-->
 
+    <!--<label for="username">-->
+    <div class="row two">
+        <div class="col-lg-1">
 
-<!-- <form action="file.php" method="post">
-    <fieldset class="account-info"></fieldset>
-
-  <label for="username">
-    First Name: <input type="text" name="firstName"><br>
-    Last Name: <input type="text" name="lastName"><br>
-
-    E-mail: <input type="text" name="email"><br>
-    Password: <input type="password" name="password"><br>
+        </div>
+        <div class="col-lg-3">
+            <label class="username">First Name</label>
+            <br>
+            <input type="text" name="firstName"><br>
+            <label class="username">Last Name</label>
+            <br>
+            <input type="text" name="lastName"><br>
+            <br>
+            <label class="login_info">Email</label>
+            <br>
+            <input type="text" name="email"><br>
+            <label class="login_info">Password</label>
+            <br>
+            <input type="password" name="password"><br>
 
 
-    Phone Number: <input type="tel" name="phoneNumber"><br>
-    Languages: <br>
-</label>
+            <label class="username">Phone number</label>
+            <br>
+            <input type="tel" name="phoneNumber"><br>
+        </div>
+        <!--<br>-->
+        <!--<br>-->
+        <div class="col-lg-3">
+            <label class="langue_group">Languages</label>
+            <br>
+            <br>
+            <!--</label>-->
 
-    <ul>
-        <li>Français: <input type="checkbox" name="speakFrench"></li>
-        <li>English: <input type="checkbox" name="speakEnglish"></li>
-    </ul><br>
+            <div class="langue_group">
+                <input type="checkbox" name="speakFrench"><label class="langue"> Francais</label>
+                <br>
+                <input type="checkbox" name="speakEnglish"> <label class="langue">English</label>
+            </div>
+            <br>
+<br>
+            <br>
+
+            <label class="skills_group">Skills</label> <br>
+
+            <input type="checkbox" name="bankHelp"> <label class="skills">Bank account</label>
+            <br>
+            <input type="checkbox" name="insuranceHelp"> <label class="skills">Insurance</label>
+            <br>
+            <input type="checkbox" name="billsHelp"> <label class="skills">Bills</label>
+            <br>
+            <input type="checkbox" name="adminHelp"> <label class="skills">Admin</label>
 
 
-    Subjects: <br>
-    <ul><br>
-        <li>Bank Accounts: <input type="checkbox" name="bankHelp"></li>
-        <li>Insurance: <input type="checkbox" name="insuranceHelp"></li>
-        <li>Bills: <input type="checkbox" name="billsHelp"></li>
-        <li>Administration <input type="checkbox" name="adminHelp"></li>
+        </div>
 
-        <!--<li>Cell Phone/Internet/TV companies: <input type="checkbox" name="cellHelp"></li>-->
-        <!--<li>Misrad Hapanim: <input type="checkbox" name="hapanimHelp"></li>-->
-    </ul><br>
-<<<<<<< Updated upstream
-    Availability: <br>
-=======
+        <!--<br>-->
+        <!--<br>-->
+
+        <div class="col-lg-3">
+            <label class="skills_group">Availability</label> <br>
+            <br>
+            <input type="checkbox" name="bankHelp"> <label class="skills">Sunday</label>
+            <br>
+            <input type="checkbox" name="insuranceHelp"> <label class="skills">Monday</label>
+            <br>
+            <input type="checkbox" name="billsHelp"> <label class="skills">Tuesday</label>
+            <br>
+            <input type="checkbox" name="adminHelp"> <label class="skills">Wednesday</label>
+            <br>
+            <input type="checkbox" name="insuranceHelp"> <label class="skills">Thursday</label>
+            <br>
+            <input type="checkbox" name="billsHelp"> <label class="skills">Friday</label>
+            <br>
+            <input type="checkbox" name="adminHelp"> <label class="skills">Saturday</label>
 
 
-    Availability:: <br>
->>>>>>> Stashed changes
-    <ul>
-        <li>Sunday: <input type="checkbox" name="sunday"></li>
-        <li>Monday: <input type="checkbox" name="monday"></li>
-        <li>Tuesday: <input type="checkbox" name="tuesday"></li>
-        <li>Wednesday: <input type="checkbox" name="wednesday"></li>
-        <li>Thursday: <input type="checkbox" name="thursday"></li>
-        <li>Friday: <input type="checkbox" name="friday"></li>
-        <li>Saturday: <input type="checkbox" name="saturday"></li>
-    </ul>
-    <input type="submit">
-</form> -->
-
+            <!--<br>-->
+            <!--<br>-->
+        </div>
+        <div class="col-lg-2">
+            <input type="submit">
+        </div>
+    </div>
+    <!--</form>-->
+</div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+<script src="./bootstrap/js/bootstrap.min.js"></script>
 
 </body>
 </html>
