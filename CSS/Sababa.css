@@ -333,7 +333,19 @@ img.sababa{
 
 p.sababa{
     text-align:center;
+    font-family: 'Calibri Light', cursive;
+    font-weight: bold;
 }
+p.helpingStudent {
+    font-family: 'Calibri Light', cursive;
+    font-weight: bold;
+}
+p.immigrantNeedHelp {
+    font-family: 'Calibri Light', cursive;
+    font-weight: bold;
+    padding-left: 14%;
+}
+
 .immigrant {
     margin-left: -17%;
 }
