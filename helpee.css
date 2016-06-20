@@ -1,0 +1,103 @@
+.nav-sidebar {
+    width: 100%;
+    padding: 8px 0;
+    border-right: 1px solid #ddd;
+    background-color:#101010;
+}
+.nav-sidebar button {
+    color: #333;
+    -webkit-transition: all 0.08s linear;
+    -moz-transition: all 0.08s linear;
+    -o-transition: all 0.08s linear;
+    transition: all 0.08s linear;
+    /*-webkit-border-radius: 4px 0 0 4px;*/
+    -moz-border-radius: 4px 0 0 4px;
+    /*border-radius: 4px 0 0 4px;*/
+}
+.nav-sidebar  button {
+    cursor: default;
+    background-color: white;
+    color: black;
+    margin:2%;
+    padding:1%;
+    border: hidden;
+}
+.nav-sidebar  button:hover {
+    background-color: #eee;
+}
+.nav-sidebar .text-overflow button,
+.nav-sidebar .text-overflow .media-body {
+    white-space: nowrap;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+a.sign_in{
+    color:black;
+}
+div.helpee{
+    height:300px;
+}
+div.filters{
+    height:300px;
+}
+
+select.dropdown{
+    margin:2%;
+    padding:2%;
+    background-color:#101010;
+    color:white;
+    border-color: white;
+}
+h1.filter{
+    color:white;
+}
+
+a.sign_in{
+    color:white;
+}
+
+
+
+.bio{
+    display: inline-block;
+    height: 100px;
+    width: 225px;
+    text-align: center;
+    border: 2px black solid;
+    border-radius: 5px;
+}
+
+.profileImage{
+    height: 50px;
+    width: 50px;
+    float: left;
+}
+
+.details{
+    display: inline-block;
+    height: 50%;
+    vertical-align: top;
+}
+
+.infoButton{
+    height: 75%;
+    width: 50%;
+    vertical-align: middle;
+    color: white;
+    display: table-cell;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.text{
+    display: table-cell;
+    width: 50%;
+    vertical-align: middle;
+}
+.rating{
+    vertical-align: middle;
+    height: 50%;
+    width: 100%;
+    display: table;
+    text-align: center;
+}

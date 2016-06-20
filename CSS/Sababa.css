@@ -78,10 +78,11 @@ div.homeMessage{
     background-color: rgba(0,0,0,0.7);
     padding: 20px 40px;
     border-radius: 25px;
-    font-family: 'Coiny', cursive;
-    font-family: 'Bungee Shade', cursive;
-    font-family: 'Yatra One', cursive;
-    font-family: 'Kavoon', cursive;
+    /*font-family: 'Coiny', cursive;*/
+    /*font-family: 'Bungee Shade', cursive;*/
+    /*font-family: 'Yatra One', cursive;*/
+    /*font-family: 'Kavoon', cursive;*/
+    font-family: 'Calibri Light', cursive;
     font-size: 40px;
 }
 .languages.french{
@@ -92,7 +93,7 @@ div.homeMessage{
 }
 
 .typeLanguage {
-    margin-left: -74%;
+    margin-left: -66%;
     margin-top: -12%;
 }
 
@@ -170,6 +171,7 @@ div.stripe.explanation{
 
 div.row.explanation{
     height:300px;
+    background-color: #ECECEC;
 }
 
 .col-lg-2.icon {
@@ -186,7 +188,7 @@ div.hover {
 }
 
 .row {
-margin-top: 1%;
+/*margin-top: 1%;*/
 padding: 2%;
 
 }
@@ -307,14 +309,17 @@ div.row.more_ppt{
 }
 
 img.sababa{
-    vertical-align:middle;
-    margin-left:25%;
+    vertical-align: middle;
+    margin-left: 28%;
+    height: 245px;
+    border-radius: 25px;
+    margin-top: -7%;
 }
 
 .fa-exchange{
     position: absolute;
-    top: 113px;
-    left: -46px;
+    top: 31%;
+    left: -23%;
 
 }
 
@@ -330,10 +335,32 @@ img.sababa{
 }
 
 p.sababa{
-    text-align:center;
+    /*text-align:center;*/
+    font-family: 'Calibri Light', cursive;
+    font-weight: bold;
+    margin-left: 29%;
 }
-<<<<<<< Updated upstream
-=======
+p.helpingStudent {
+    font-family: 'Calibri Light', cursive;
+    font-weight: bold;
+}
+p.immigrantNeedHelp {
+    font-family: 'Calibri Light', cursive;
+    font-weight: bold;
+    padding-left: 14%;
+}
+
+.immigrant {
+    margin-left: -19%;
+    height: 227px;
+    border-radius: 25px;
+}
+.oleh {
+    height: 227px;
+    border-radius: 25px;
+    margin-left: -2%;
+}
+
 
 /*Start form beaty */
 
@@ -392,5 +419,22 @@ input {
   float: left;
   margin: 10px 0 0 20px;
 }
-
-/* end form beatification */
+.footer-company-name{
+    display: inline-block;
+}
+span.SocialN {
+    margin-left: 76%;
+}
+img.socialNetwork.facebook, img.socialNetwork.google, img.socialNetwork.instagram {
+    padding-right: 1%;
+}
+.footer-basic-centered{
+  background-color: black;
+}
+p.footer-links {
+    color: white;
+    padding-top: 1%;
+}
+p.footer-company-name {
+    color: white;
+}
