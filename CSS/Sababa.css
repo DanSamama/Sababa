@@ -309,14 +309,17 @@ div.row.more_ppt{
 }
 
 img.sababa{
-    vertical-align:middle;
-    margin-left:30%;
+    vertical-align: middle;
+    margin-left: 28%;
+    height: 245px;
+    border-radius: 25px;
+    margin-top: -7%;
 }
 
 .fa-exchange{
     position: absolute;
     top: 31%;
-    left: -24%;
+    left: -23%;
 
 }
 
@@ -332,9 +335,10 @@ img.sababa{
 }
 
 p.sababa{
-    text-align:center;
+    /*text-align:center;*/
     font-family: 'Calibri Light', cursive;
     font-weight: bold;
+    margin-left: 29%;
 }
 p.helpingStudent {
     font-family: 'Calibri Light', cursive;
@@ -347,8 +351,16 @@ p.immigrantNeedHelp {
 }
 
 .immigrant {
-    margin-left: -17%;
+    margin-left: -19%;
+    height: 227px;
+    border-radius: 25px;
 }
+.oleh {
+    height: 227px;
+    border-radius: 25px;
+    margin-left: -2%;
+}
+
 
 /*Start form beaty */
 
@@ -416,4 +428,13 @@ span.SocialN {
 img.socialNetwork.facebook, img.socialNetwork.google, img.socialNetwork.instagram {
     padding-right: 1%;
 }
-
+.footer-basic-centered{
+  background-color: black;
+}
+p.footer-links {
+    color: white;
+    padding-top: 1%;
+}
+p.footer-company-name {
+    color: white;
+}
