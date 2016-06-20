@@ -47,37 +47,36 @@
     <div class="row helpee">
         <div class="col-lg-2 filters">
             <nav class="nav-sidebar">
-                <h1 class="filter">Filter by</h1>
+                <h1>Filter by</h1>
                 <ul class="nav">
-                    <!--<li ><button onclick="frenchUsers();">Availability</button></li>-->
-
-                    <select  onchange="availabilityChecked();" class=" ui fluid selection dropdown">
-                        <option selected disabled>Availability</option>
-                        <option class="day" value="sunday">SUNDAY</option>
-                        <option class="day"  value="monday">MONDAY</option>
-                        <option class="day"  value="tuesday">TUESDAY</option>
-                        <option class="day" value="wednesday">WEDNESDAY</option>
-                        <option class="day"  value="thursday">THURSDAY</option>
-                        <option class="day"  value="friday">FRIDAY</option>
-                        <option class="day" value="saturday">SATURDAY</option>
-
-                    </select>
-                    <select  onchange="skillsChecked();" class=" ui fluid selection dropdown">
+                    <li ><button onclick="frenchUsers();">Availability</button></li>
+                    <!--<li><button onclick="javascript:;">Skills</button></li>-->
+                    <select name="skills" class=" skills ui fluid selection dropdown form-control">
+                        <!--<input type="hidden" name="skills">-->
+                        <!--<i class="dropdown icon"></i>-->
                         <option selected disabled>Skills</option>
-                        <option class="skills" value="banks">banks</option>
-                        <option class="skills"  value="insurance">insurance</option>
-                        <option class="skills"  value="admin">admin</option>
-                        <option class="skills" value="bills">bills</option>
+                         <option class="evil" onclick="skillsChecked();"id="bank" value="banks">banks</option>
+                        <option class="evil" onclick="skillsChecked();"id="insurance" value="insurance">insurance</option>
+                        <option class="evil" onclick="skillsChecked();"id="admin" value="admin">admin</option>
+                        <option class="evil" onclick="skillsChecked();"id="bills" value="bills">bills</option>
                     </select>
 
-                    <select  onchange="localisationChecked();" class=" ui fluid selection dropdown">
-                        <option selected disabled>City</option>
-                        <option class="city" value="tel aviv">TEL AVIV</option>
-                        <option class="city"  value="jerusalem">JERUSALEM</option>
-                        <option class="city"  value="haifa">HAIFA/option>
-                        <option class="city" value="natanya">NATANYA</option>
-                    </select>
+                    <!--<div class="dropdown">-->
+                        <!--<select class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">-->
+                            <!--Skills-->
+                            <!--<span class="caret"></span>-->
+                        <!--</select>-->
+                        <!--<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">-->
+                            <!--<li><option href="#">Bank</option></li>-->
+                            <!--<li><option href="#">Insurance</option></li>-->
+                            <!--<li><option href="#">Admin</option></li>-->
+                            <!--<li><option href="#">Admin</option></li>-->
 
+                        <!--</ul>-->
+                    <!--</div>-->
+                    <li><button onclick="javascript:;">Localisation</button></li>
+                    <!--<li><a href="javascript:;">FAQ</a></li>-->
+                    <li class="nav-divider"></li>
                     <li><a class="sign_in" href="javascript:;"><i class="glyphicon glyphicon-off"></i> Sign in</a></li>
                 </ul>
             </nav>

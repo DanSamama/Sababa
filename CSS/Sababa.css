@@ -131,21 +131,21 @@ body.allBody{
     z-index: 4;
     background-color: black;
 }
-.logoFlag{
-    height: 100px;
-    width: auto;
-}
-.logoFlag.usa {
-    margin-top: 85%;
-    margin-left: 68%;
-}
-.logoFlag.fr {
-    margin-right: 8%;
-}
-.logoFlag.ru {
-    margin-top: 83%;
-    margin-left: 15%;
-}
+/*.logoFlag{*/
+    /*height: 100px;*/
+    /*width: auto;*/
+/*}*/
+/*.logoFlag.usa {*/
+    /*margin-top: 85%;*/
+    /*margin-left: 68%;*/
+/*}*/
+/*.logoFlag.fr {*/
+    /*margin-right: 8%;*/
+/*}*/
+/*.logoFlag.ru {*/
+    /*margin-top: 83%;*/
+    /*margin-left: 15%;*/
+/*}*/
 .navbar-brand.Sababa{
     /*font-family: 'Coiny', cursive;*/
     /*font-family: 'Bungee Shade', cursive;*/
@@ -182,10 +182,11 @@ div.hover {
     background-repeat: no-repeat;
     height: 250px;
     overflow: hidden;
+
 }
 
 .row {
-margin-bottom: 4%;
+margin-top: 1%;
 padding: 2%;
 
 }
@@ -212,9 +213,13 @@ div.icon {
     top:0;
     left:0;
     opacity:0;
-    background-color:rgba(0,0,0,0.9);
+    background-color:rgba(0,0,0,0.6);
     -webkit-transition:all .4s ease-in-out;
-    transition:all .4s ease-in-out
+    transition:all .4s ease-in-out;
+    font-family: 'Coiny', cursive;
+    font-family: 'Bungee Shade', cursive;
+    font-family: 'Yatra One', cursive;
+    font-family: 'Kavoon', cursive;
 }
 
 .hovereffect img {
@@ -227,7 +232,7 @@ div.icon {
 .hovereffect h2 {
     text-transform:uppercase;
     margin-top:25%;
-    color:#00AEEF;
+    color:white;
     text-align:center;
     vertical-align: middle;
     position:relative;
