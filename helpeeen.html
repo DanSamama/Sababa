@@ -48,7 +48,7 @@
             <ul class="nav">
                 <!--<li ><button onclick="frenchUsers();">Availability</button></li>-->
 
-                <select onchange="availabilityChecked();" class=" ui fluid selection dropdown">
+                <select onchange="showBoxes()"  id="selector" class=" ui fluid selection dropdown">
                     <option selected disabled>Availability</option>
                     <option class="day" value="sunday">SUNDAY</option>
                     <option class="day" value="monday">MONDAY</option>
@@ -59,7 +59,7 @@
                     <option class="day" value="saturday">SATURDAY</option>
 
                 </select>
-                <select onchange="skillsChecked();" class=" ui fluid selection dropdown">
+                <select onchange="showBoxes1()" id="selected" class=" ui fluid selection dropdown">
                     <option selected disabled>Skills</option>
                     <option class="skills" value="banks">BANKS</option>
                     <option class="skills" value="insurance">INSURANCE</option>
@@ -67,11 +67,11 @@
                     <option class="skills" value="bills">BILLS</option>
                 </select>
 
-                <select onchange="localisationChecked();" class=" ui fluid selection dropdown">
+                <select onchange="showBoxes2()" id="select" class=" ui fluid selection dropdown">
                     <option selected disabled>City</option>
                     <option class="city" value="tel aviv">TEL AVIV</option>
                     <option class="city" value="jerusalem">JERUSALEM</option>
-                    <option class="city" value="haifa">HAIFA/option>
+                    <option class="city" value="haifa">HAIFA</option>
                     <option class="city" value="natanya">NATANYA</option>
                 </select>
 
@@ -86,7 +86,7 @@
 </div>
 <!--</div>-->
 <!-- /#wrapper -->
+<script src="gameWorkshop/Script/jquery-2.2.4.js"></script>
 <script src="helpeeen.js"></script>
-<script src="popup.js"></script>
 </body>
 </html>
